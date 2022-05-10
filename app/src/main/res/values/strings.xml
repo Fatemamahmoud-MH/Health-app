@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HealthApp1</string>
+    <string name="fitnessapp">FITNESSAPP</string>
+    <string name="mood_recording">Mood recording</string>
+    <string name="physical_activity_recording">Physical activity recording</string>
+    <string name="progress">Progress</string>
+    <string name="cancel">CANCEL</string>
+    <string name="you_can_record_here_mood">You can record here Mood</string>
+    <string name="ruhig">ruhig</string>
+    <string name="unzufrieden">unzufrieden</string>
+    <string name="zufrieden">zufrieden</string>
+    <string name="energielos">energielos</string>
+    <string name="energiegeladen">energiegeladen</string>
+    <string name="angespannt">angespannt</string>
+    <string name="entspannt">entspannt</string>
+    <string name="save">save</string>
+    <string name="back">back</string>
+    <string name="m_de">Müde</string>
+    <string name="date">Date</string>
+    <string name="unruhig">unruhig</string>
+    <string name="wohl">wohl</string>
+    <string name="unwohl">unwohl</string>
+    <string name="wach">wach</string>
+    <string name="in_den_letzten_f_hlte_ich_mich_im_durchschnitt">in den letzten fühlte ich mich im Durchschnitt</string>
+</resources>
