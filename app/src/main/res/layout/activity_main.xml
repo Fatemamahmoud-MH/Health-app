@@ -44,7 +44,7 @@
         android:text="@string/progress" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonCancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -54,4 +54,16 @@
         android:background="@drawable/gradient"
         android:text="@string/cancel"
         style="@style/CardView.Dark"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="34dp"
+        android:contentDescription="@string/submit"
+        android:src="@drawable/gradient" />
 </RelativeLayout>

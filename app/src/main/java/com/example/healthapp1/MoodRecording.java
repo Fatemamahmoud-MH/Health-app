@@ -3,7 +3,9 @@ package com.example.healthapp1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -21,12 +23,25 @@ public class MoodRecording extends AppCompatActivity {
     TextView textViewQuestion5;
     SeekBar seekBarQuestion6;
     TextView textViewQuestion6;
+    //cancel
+    Button   backToHomePageFromMoodRecording ;
+    //next event
+    Button buttonNextEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood_recording);
+        ////this is for ,when we finish  mood recording and i want to go back to homepage.
+        backToHomePageFromMoodRecording = findViewById(R.id.buttonBack);
+        backToHomePageFromMoodRecording.setOnClickListener(view -> ClickToReturnHomePage());
+        ///next to Event appraisal
+        buttonNextEvent = findViewById(R.id.buttonNext);
+        buttonNextEvent.setOnClickListener(view -> ClickNextTOEventMood());
 
+
+
+        /////these are for Mood recording
         seekBarQuestion1 = findViewById(R.id.seekBar1);
         textViewQuestion1 = findViewById(R.id.textView5);
         seekBarQuestion2 = findViewById(R.id.seekBar2);
@@ -51,11 +66,10 @@ public class MoodRecording extends AppCompatActivity {
                 else {
                     textViewQuestion1.setText("unzufrieden "+ progressQuestion1 + "%");
                 }
-
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+                seekBar.setProgress(1);
 
             }
 
@@ -181,5 +195,13 @@ public class MoodRecording extends AppCompatActivity {
             }
         });
 
+    }
+    public void ClickToReturnHomePage(){
+        Intent intentHomePage = new Intent(MoodRecording.this,MainActivity.class);
+        startActivity(intentHomePage);
+    }
+    public  void ClickNextTOEventMood(){
+        Intent intentEvent = new Intent(MoodRecording.this,EventAppraisal.class);
+        startActivity(intentEvent);
     }
 }

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthApp1">
         <activity
+            android:name=".SocialContext"
+            android:exported="false" />
+        <activity
+            android:name=".EventAppraisal"
+            android:exported="false" />
+        <activity
             android:name=".MoodRecording"
             android:exported="false" />
         <activity

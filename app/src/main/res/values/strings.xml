@@ -16,10 +16,17 @@
     <string name="save">save</string>
     <string name="back">back</string>
     <string name="m_de">Müde</string>
-    <string name="date">Date</string>
     <string name="unruhig">unruhig</string>
     <string name="wohl">wohl</string>
     <string name="unwohl">unwohl</string>
     <string name="wach">wach</string>
     <string name="in_den_letzten_f_hlte_ich_mich_im_durchschnitt">in den letzten fühlte ich mich im Durchschnitt</string>
+    <string name="submit">dd</string>
+    <string name="haben_sie_seit_letzten_abfrage_eines_oder_mehrere_negative_ereignisse_erlebt_wie_intensiv_war_das_bedeutendste_negative_ereignis">Haben Sie seit letzten Abfrage eines oder mehrere negative Ereignisse erlebt? Wie intensiv war das bedeutendste negative Ereignis?</string>
+    <string name="haben_sie_seit_der_letzten_abfragen_eines_oder_mehrere_positive_ereignisse_erlebt_wie_intensiv_war_das_bedeutendste_positive_ereignis">Haben Sie seit der letzten Abfragen eines oder mehrere positive Ereignisse erlebt?Wie intensiv war das bedeutendste positive Ereignis?</string>
+    <string name="next">NEXT</string>
+    <string name="__0">0</string>
+    <string name="_0">0</string>
+    <string name="_100">100</string>
+    <string name="_next">NEXT</string>
 </resources>

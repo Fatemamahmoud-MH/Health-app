@@ -2,18 +2,20 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Bottom 15dp Shadow -->
-    <item>
+    <item
+        android:state_pressed="false">
         <shape  android:shape="rectangle">
 
             <!--            Button Shadow Color -->
-            <solid android:color="#31243A" />
-            <corners android:radius="10dp" />
+            <solid android:color="#70617A" />
+            <corners android:radius="22dp" />
 
         </shape>
     </item>
 
     <!-- White Top color -->
-    <item android:bottom="15px">
+    <item android:bottom="15px"
+        android:state_pressed="true">
 
         <shape  android:shape="rectangle">
             <padding android:bottom="10dp"
@@ -22,7 +24,7 @@
                 android:right="20dp"/>
 
             <!--            Button TOP Color -->
-            <solid android:color="#796381" />
+            <solid android:color="#7C7480" />
             <corners android:radius="9dp" />
         </shape>
 
