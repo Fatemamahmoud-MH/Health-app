@@ -29,4 +29,32 @@
     <string name="_0">0</string>
     <string name="_100">100</string>
     <string name="_next">NEXT</string>
+    <string name="sind_sie_im_moment_alleine">Sind Sie im Moment alleine ?</string>
+    <string name="wenn_sie_an_die_personen_denken_die_sie_gerade_umgeben_inwiefern_trifft_folgende_aussage_zu_ich_mag_diese_leute_nicht">Wenn Sie an die Personen denken, die Sie gerade umgeben, inwiefern trifft folgende Aussage zu? ich mag diese leute nicht.</string>
+    <string name="von_welchen_menschen_sind_sie_momentant_umgeben">Von welchen Menschen sind Sie momentant umgeben?</string>
+    <string name="wo_befinden_sie_sich_gerade">Wo befinden Sie sich gerade?</string>
+    <string-array name="YesOrNo">
+        <item> </item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="SocialSituation">
+        <item> </item>
+        <item>Lebenspartner*in</item>
+        <item>Familie</item>
+        <item>Freunde</item>
+        <item>Arbeitskollg*innen</item>
+        <item>Fremde</item>
+    </string-array>
+    <string-array name="Context">
+        <item> </item>
+        <item>Zuhause</item>
+        <item>Arbeit</item>
+        <item>Sport</item>
+        <item>sonstiges Hoppy</item>
+        <item>Einkaufen</item>
+        <item>Besuch</item>
+        <item>Sonstiges</item>
+    </string-array>
+
 </resources>

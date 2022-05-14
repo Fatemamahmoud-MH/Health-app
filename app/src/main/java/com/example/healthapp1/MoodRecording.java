@@ -196,10 +196,12 @@ public class MoodRecording extends AppCompatActivity {
         });
 
     }
+    ///back start screen
     public void ClickToReturnHomePage(){
         Intent intentHomePage = new Intent(MoodRecording.this,MainActivity.class);
         startActivity(intentHomePage);
     }
+    ///next event
     public  void ClickNextTOEventMood(){
         Intent intentEvent = new Intent(MoodRecording.this,EventAppraisal.class);
         startActivity(intentEvent);

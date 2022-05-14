@@ -1,7 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".SocialContext"/>
+    android:scaleX="1"
+    android:scaleY="1"
+    tools:context=".SocialContext">
+
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="89dp"
+        android:text="@string/_0" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/_100" />
+
+    <SeekBar
+        android:id="@+id/seekBarSocialContext"
+        android:layout_width="308dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="53dp"
+        android:scaleX="1"
+        android:scaleY="2" />
+
+    <TextView
+        android:id="@+id/textViewSocialContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="206dp"
+        android:layout_marginBottom="25dp"
+        tools:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="533dp"
+        android:background="@drawable/spinnerbackground"
+        android:paddingBottom="13dp"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/white"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewSpinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="456dp"
+        android:text="@string/von_welchen_menschen_sind_sie_momentant_umgeben" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="249dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="411dp"
+        android:background="@drawable/spinnerbackground"
+        android:spinnerMode="dropdown"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="370dp"
+        android:layout_height="96dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="147dp"
+        android:text="@string/wenn_sie_an_die_personen_denken_die_sie_gerade_umgeben_inwiefern_trifft_folgende_aussage_zu_ich_mag_diese_leute_nicht"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="309dp"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="577dp"
+        android:text="@string/sind_sie_im_moment_alleine"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="262dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="363dp"
+        android:text="@string/wo_befinden_sie_sich_gerade" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="327dp"
+        android:background="@drawable/spinnerbackground"
+        android:spinnerMode="dropdown" />
+
+
+</RelativeLayout>
