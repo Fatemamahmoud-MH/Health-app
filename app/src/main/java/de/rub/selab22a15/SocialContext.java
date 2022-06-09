@@ -1,35 +1,48 @@
-package com.example.healthapp1;
+package de.rub.selab22a15;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class SocialContext extends AppCompatActivity {
-    SeekBar seekBarSocialContext;
-    TextView textViewSocialContext;
+
     TextView textViewSpinner2;
     Spinner spinner1;
     Spinner spinner2;
     Spinner spinner3;
-    ArrayAdapter<CharSequence> adapter;
+
+    ImageView ClickOnImageToBack;
     ///spinner
     private static final int SPINNER_OPTION_FIRST = 0;
     private static final int SPINNER_OPTION_SECOND = 1;
     private static final int SPINNER_OPTION_THIRD = 2;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_social_context);
+
+        ////change color
+        final View view1 = findViewById(R.id.circle_four);
+        view1.setBackground(getResources().getDrawable(R.drawable.ic_baseline_circle_24,null));
+
+        ///
+        ClickOnImageToBack = findViewById(R.id.back2);
+        ClickOnImageToBack.setOnClickListener(view -> ClickOnToBackEvent());
+
+
         ////spinner1
         spinner1 = findViewById(R.id.spinner1);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.YesOrNo, android.R.layout.simple_spinner_item);
@@ -41,11 +54,11 @@ public class SocialContext extends AppCompatActivity {
                 String text = parent.getItemAtPosition(position).toString();
                 switch (position){
                     case SPINNER_OPTION_FIRST:
-                    case SPINNER_OPTION_THIRD:
+                    case SPINNER_OPTION_SECOND:
                         textViewSpinner2.setVisibility(View.GONE);
                         spinner2.setVisibility(View.GONE);
                         break;
-                    case SPINNER_OPTION_SECOND:
+                    case SPINNER_OPTION_THIRD:
                         textViewSpinner2.setVisibility(View.VISIBLE);
                         spinner2.setVisibility(View.VISIBLE);
                         break;
@@ -99,36 +112,11 @@ public class SocialContext extends AppCompatActivity {
         });
 
 
-        ////seekBar
-
-        seekBarSocialContext = findViewById(R.id.seekBarSocialContext);
-        textViewSocialContext = findViewById(R.id.textViewSocialContext);
-        seekBarSocialContext.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progressSocial1, boolean fromUser) {
-                if(progressSocial1 == 0) {
-                    textViewSocialContext.setText("trifft überhaupt nicht zu " + progressSocial1 + "%");
-                }
-                else if(progressSocial1 == 100){
-                    textViewSocialContext.setText("trifft völlig zu " + progressSocial1 + "%");
-                }
-                else{
-                    textViewSocialContext.setText(progressSocial1 + "%");
-                }
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
+    }
+    ////click on button to back to event pag
+    public void ClickOnToBackEvent(){
+        Intent intentEventByCircle2 = new Intent(SocialContext.this,SelbestwertImplus.class);
+        startActivity(intentEventByCircle2);
     }
 
 }

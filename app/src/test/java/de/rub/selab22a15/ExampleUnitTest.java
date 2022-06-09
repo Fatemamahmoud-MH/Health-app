@@ -1,4 +1,4 @@
-package com.example.healthapp1;
+package de.rub.selab22a15;
 
 import org.junit.Test;
 

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelbestwertImplus">
+
+    <include layout="@layout/stepper" />
+
+    <TextView
+        android:id="@+id/textSelbst1"
+        android:layout_width="366dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="569dp"
+        android:text="@string/gegenw_rtig_bin_ich_mit_mir_selbst_zufrieden" />
+
+    <SeekBar
+        android:id="@+id/seekBarSelbst1"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="516dp"
+        android:max="10"
+        android:progress="0"
+        android:scaleX="1"
+        android:scaleY="1" />
+
+    <TextView
+        android:id="@+id/textViewSelbst1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="520dp"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/textSelbst2"
+        android:layout_width="366dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="472dp"
+        android:text="@string/im_augenblick_halte_ich_mich_f_r_einen_versager" />
+
+    <SeekBar
+        android:id="@+id/seekBarSelbst3"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="268dp"
+        android:max="10"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textViewSelbst2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="406dp"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/textSelbst3"
+        android:layout_width="385dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="322dp"
+        android:text="Seit der letzten Abfrage habe ich impulsiv gehandelt,d.h.ich habe gehandelt,ohne mir Gedanken über mögliche Konsequenzen zu machen" />
+
+    <SeekBar
+        android:id="@+id/seekBarSelbst2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="428dp"
+        android:max="10"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textViewSelbst4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="191dp"
+        android:layout_marginBottom="93dp"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/textSelbst4"
+        android:layout_width="397dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="177dp"
+        android:text="Seit der letzten Abfrage habe ich mich gegenüber einer anderen Person ärgerlch oder aggressiv verhalten, was mir danach leidtat " />
+
+    <SeekBar
+        android:id="@+id/seekBarSelbst4"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="356dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="107dp"
+        android:max="10"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textViewSelbst3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="248dp"
+        tools:text="TextView" />
+
+</RelativeLayout>

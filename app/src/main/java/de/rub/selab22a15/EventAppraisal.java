@@ -1,11 +1,12 @@
-package com.example.healthapp1;
+package de.rub.selab22a15;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -15,10 +16,17 @@ public class EventAppraisal extends AppCompatActivity {
     SeekBar seekbarEventQuestion2;
     TextView textViewEvent1;
     TextView textViewEvent2;
+    SeekBar seekBarSocialContext;
+    TextView textViewSocialContext;
+
+
+
 
     //click next to record other part of mood questions
-    Button clickNext;
+    ImageView clickNext;
+    ImageView clickBack;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,8 +36,17 @@ public class EventAppraisal extends AppCompatActivity {
         textViewEvent1 = findViewById(R.id.textViewEvent1);
         textViewEvent2 = findViewById(R.id.textViewEvent2);
         ///Click next
-        clickNext = findViewById(R.id.buttonNext);
+        clickNext = findViewById(R.id.next);
         clickNext.setOnClickListener(v -> ClickNextTOSocialContext());
+
+        ///CLICK BACK
+        clickBack = findViewById(R.id.back2);
+        clickBack.setOnClickListener(v -> ClickNextTOMoodRecording());
+
+
+        ///
+        final View view = findViewById(R.id.circle_two);
+        view.setBackground(getResources().getDrawable(R.drawable.ic_baseline_circle_24,null));
 
         //SeekBar action
         seekbarEventQuestion1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -86,11 +103,43 @@ public class EventAppraisal extends AppCompatActivity {
 
             }
         });
+        ////seekBar3
+        seekBarSocialContext = findViewById(R.id.seekBarSocialContext);
+        textViewSocialContext = findViewById(R.id.textViewSocialContext);
+        seekBarSocialContext.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @SuppressLint("SetTextI18n")
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progressSocial1, boolean fromUser) {
+                if(progressSocial1 == 0) {
+                    textViewSocialContext.setText("trifft überhaupt nicht zu " + progressSocial1 + "%");
+                }
+                else if(progressSocial1 == 100){
+                    textViewSocialContext.setText("trifft völlig zu " + progressSocial1 + "%");
+                }
+                else{
+                    textViewSocialContext.setText(progressSocial1 + "%");
+                }
+            }
 
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
+
     public void ClickNextTOSocialContext(){
-        Intent intentSocialContext = new Intent(EventAppraisal.this,SocialContext.class);
+        Intent intentSocialContext = new Intent(EventAppraisal.this, de.rub.selab22a15.SelbestwertImplus.class);
         startActivity(intentSocialContext);
+    }
+    public void ClickNextTOMoodRecording(){
+        Intent intentMoodRecording = new Intent(EventAppraisal.this, de.rub.selab22a15.MoodRecording.class);
+        startActivity(intentMoodRecording);
     }
 
 

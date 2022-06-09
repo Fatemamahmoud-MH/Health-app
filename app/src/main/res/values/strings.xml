@@ -33,6 +33,9 @@
     <string name="wenn_sie_an_die_personen_denken_die_sie_gerade_umgeben_inwiefern_trifft_folgende_aussage_zu_ich_mag_diese_leute_nicht">Wenn Sie an die Personen denken, die Sie gerade umgeben, inwiefern trifft folgende Aussage zu? ich mag diese leute nicht.</string>
     <string name="von_welchen_menschen_sind_sie_momentant_umgeben">Von welchen Menschen sind Sie momentant umgeben?</string>
     <string name="wo_befinden_sie_sich_gerade">Wo befinden Sie sich gerade?</string>
+    <string name="todo">toDo</string>
+    <string name="gegenw_rtig_bin_ich_mit_mir_selbst_zufrieden">Gegenwärtig bin ich mit mir selbst zufrieden!</string>
+    <string name="im_augenblick_halte_ich_mich_f_r_einen_versager">Im Augenblick halte ich mich für einen Versager!</string>
     <string-array name="YesOrNo">
         <item> </item>
         <item>Yes</item>

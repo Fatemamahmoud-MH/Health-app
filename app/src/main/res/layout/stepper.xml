@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="65dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/todo"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_chevron_left"
+        app:tint="#66666666"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_chevron_left"
+        app:tint="#66666666"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="156dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/back2"
+        tools:ignore="MissingConstraints">
+
+
+        <View
+            android:id="@+id/circle_one"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <View
+            android:id="@+id/circle_two"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toEndOf="@+id/circle_one"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <View
+            android:id="@+id/circle_three"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toEndOf="@+id/circle_two"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+        <View
+            android:id="@+id/circle_four"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toEndOf="@+id/circle_three"
+            android:background="@drawable/ic_baseline_circle_24" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

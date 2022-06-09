@@ -9,55 +9,16 @@
     tools:context=".SocialContext">
 
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="22dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="344dp"
-        android:layout_marginBottom="89dp"
-        android:text="@string/_0" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="71dp"
-        android:layout_marginBottom="90dp"
-        android:text="@string/_100" />
-
-    <SeekBar
-        android:id="@+id/seekBarSocialContext"
-        android:layout_width="308dp"
-        android:layout_height="35dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="53dp"
-        android:scaleX="1"
-        android:scaleY="2" />
-
-    <TextView
-        android:id="@+id/textViewSocialContext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="206dp"
-        android:layout_marginBottom="25dp"
-        tools:text="TextView" />
+    <include layout="@layout/stepper" />
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="151dp"
-        android:layout_height="wrap_content"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="143dp"
-        android:layout_marginBottom="533dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="374dp"
         android:background="@drawable/spinnerbackground"
         android:paddingBottom="13dp"
         android:spinnerMode="dropdown"
@@ -70,33 +31,25 @@
         android:layout_height="47dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="456dp"
-        android:text="@string/von_welchen_menschen_sind_sie_momentant_umgeben" />
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="319dp"
+        android:text="@string/von_welchen_menschen_sind_sie_momentant_umgeben"
+        android:textAlignment="center"
+        android:textColor="#0B0909"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="249dp"
-        android:layout_height="45dp"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="411dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="272dp"
         android:background="@drawable/spinnerbackground"
         android:spinnerMode="dropdown"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="370dp"
-        android:layout_height="96dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="147dp"
-        android:text="@string/wenn_sie_an_die_personen_denken_die_sie_gerade_umgeben_inwiefern_trifft_folgende_aussage_zu_ich_mag_diese_leute_nicht"
-        android:textSize="16sp"
-        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView17"
@@ -104,9 +57,10 @@
         android:layout_height="19dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="577dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="438dp"
         android:text="@string/sind_sie_im_moment_alleine"
+        android:textColor="#120F0F"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -116,20 +70,26 @@
         android:layout_height="20dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="115dp"
-        android:layout_marginBottom="363dp"
-        android:text="@string/wo_befinden_sie_sich_gerade" />
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="546dp"
+        android:text="@string/wo_befinden_sie_sich_gerade"
+        android:textColor="#090707"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <Spinner
         android:id="@+id/spinner3"
-        android:layout_width="256dp"
+        android:layout_width="166dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="327dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="477dp"
         android:background="@drawable/spinnerbackground"
-        android:spinnerMode="dropdown" />
+        android:contentDescription="@string/_0"
+        android:minHeight="48dp"
+        android:spinnerMode="dropdown"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
 
 </RelativeLayout>

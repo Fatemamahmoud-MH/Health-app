@@ -1,4 +1,4 @@
-package com.example.healthapp1;
+package de.rub.selab22a15;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    /////
     public void openSurveyActivity(){
-        Intent intentSurvey = new Intent(MainActivity.this,MoodRecording.class);
+        Intent intentSurvey = new Intent(MainActivity.this, de.rub.selab22a15.MoodRecording.class);
         startActivity(intentSurvey);
     }
 

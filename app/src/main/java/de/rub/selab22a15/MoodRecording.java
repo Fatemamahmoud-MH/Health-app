@@ -1,58 +1,65 @@
-package com.example.healthapp1;
+package de.rub.selab22a15;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class MoodRecording extends AppCompatActivity {
 
-    SeekBar seekBarQuestion1;
-    TextView textViewQuestion1;
-    SeekBar seekBarQuestion2;
-    TextView textViewQuestion2;
-    SeekBar seekBarQuestion3;
-    TextView textViewQuestion3;
-    SeekBar seekBarQuestion4;
-    TextView textViewQuestion4;
-    SeekBar seekBarQuestion5;
-    TextView textViewQuestion5;
-    SeekBar seekBarQuestion6;
-    TextView textViewQuestion6;
-    //cancel
-    Button   backToHomePageFromMoodRecording ;
-    //next event
-    Button buttonNextEvent;
+    private TextView textViewQuestion1;
+    private TextView textViewQuestion2;
+    private TextView textViewQuestion3;
+    private TextView textViewQuestion4;
+    private TextView textViewQuestion5;
+    private TextView textViewQuestion6;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mood_recording);
         ////this is for ,when we finish  mood recording and i want to go back to homepage.
-        backToHomePageFromMoodRecording = findViewById(R.id.buttonBack);
+        //cancel
+        ImageView backToHomePageFromMoodRecording = findViewById(R.id.back2);
         backToHomePageFromMoodRecording.setOnClickListener(view -> ClickToReturnHomePage());
         ///next to Event appraisal
-        buttonNextEvent = findViewById(R.id.buttonNext);
-        buttonNextEvent.setOnClickListener(view -> ClickNextTOEventMood());
+        //next event
+        ImageView nextEvent = findViewById(R.id.next);
+        nextEvent.setOnClickListener(view -> ClickNextTOEventMood());
+
+        ////change color when move
+        final View view = findViewById(R.id.circle_one);
+        view.setBackground(getResources().getDrawable(R.drawable.ic_baseline_circle_24,null));
+
+        ///next "second Circle "to Event appraisal
+        //next circle event
+        View secondCircle = findViewById(R.id.circle_two);
+        secondCircle.setOnClickListener(v -> ClickOnSecondCircle());
+        ////
+        View thirdCircle = findViewById(R.id.circle_three);
+        thirdCircle.setOnClickListener(v -> ClickOnThirdCircle());
+
 
 
 
         /////these are for Mood recording
-        seekBarQuestion1 = findViewById(R.id.seekBar1);
+        SeekBar seekBarQuestion1 = findViewById(R.id.seekBar1);
         textViewQuestion1 = findViewById(R.id.textView5);
-        seekBarQuestion2 = findViewById(R.id.seekBar2);
+        SeekBar seekBarQuestion2 = findViewById(R.id.seekBar2);
         textViewQuestion2 = findViewById(R.id.textView8);
-        seekBarQuestion3 = findViewById(R.id.seekBar3);
+        SeekBar seekBarQuestion3 = findViewById(R.id.seekBar3);
         textViewQuestion3 = findViewById(R.id.textView10);
-        seekBarQuestion4 = findViewById(R.id.seekBar4);
+        SeekBar seekBarQuestion4 = findViewById(R.id.seekBar4);
         textViewQuestion4 = findViewById(R.id.textView12);
-        seekBarQuestion5 = findViewById(R.id.seekBar5);
+        SeekBar seekBarQuestion5 = findViewById(R.id.seekBar5);
         textViewQuestion5 = findViewById(R.id.textView14);
-        seekBarQuestion6 = findViewById(R.id.seekBar);
+        SeekBar seekBarQuestion6 = findViewById(R.id.seekBar);
         textViewQuestion6 = findViewById(R.id.textView19);
 
 
@@ -69,7 +76,7 @@ public class MoodRecording extends AppCompatActivity {
             }
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                seekBar.setProgress(1);
+                seekBar.setProgress(0);
 
             }
 
@@ -78,6 +85,7 @@ public class MoodRecording extends AppCompatActivity {
 
             }
         });
+        ////
 
         seekBarQuestion2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @SuppressLint("SetTextI18n")
@@ -205,5 +213,15 @@ public class MoodRecording extends AppCompatActivity {
     public  void ClickNextTOEventMood(){
         Intent intentEvent = new Intent(MoodRecording.this,EventAppraisal.class);
         startActivity(intentEvent);
+    }
+    ////
+    public void ClickOnSecondCircle(){
+        Intent intentEventByCircle = new Intent(MoodRecording.this,EventAppraisal.class);
+        startActivity(intentEventByCircle);
+    }
+    /////
+    public void ClickOnThirdCircle(){
+        Intent intentEventByCircle2 = new Intent(MoodRecording.this, de.rub.selab22a15.SelbestwertImplus.class);
+        startActivity(intentEventByCircle2);
     }
 }

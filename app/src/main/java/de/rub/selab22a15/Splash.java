@@ -1,4 +1,4 @@
-package com.example.healthapp1;
+package de.rub.selab22a15;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +21,7 @@ public class Splash extends AppCompatActivity {
             startActivity(i);
 
 
-        },3000);
+        },1000);
 
     }
 }

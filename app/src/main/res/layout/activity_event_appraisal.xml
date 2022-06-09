@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
     tools:context=".EventAppraisal">
+
+    <include layout="@layout/stepper" />
 
     <TextView
         android:id="@+id/textEvent1"
@@ -12,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="3dp"
-        android:layout_marginBottom="566dp"
+        android:layout_marginBottom="538dp"
         android:text="@string/haben_sie_seit_letzten_abfrage_eines_oder_mehrere_negative_ereignisse_erlebt_wie_intensiv_war_das_bedeutendste_negative_ereignis" />
 
     <TextView
@@ -41,13 +44,13 @@
         android:layout_height="62dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="452dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="445dp"
         android:max="100"
         android:progress="0"
         android:scaleX="1"
-        android:scaleY="2"
-        android:thumb="@color/white" />
+        android:scaleY="1"
+        android:thumb="@drawable/ic_baseline_panorama_fish_eye_24" />
 
     <TextView
         android:id="@+id/textViewEvent1"
@@ -66,42 +69,42 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="343dp"
+        android:layout_marginBottom="365dp"
         android:text="@string/haben_sie_seit_der_letzten_abfragen_eines_oder_mehrere_positive_ereignisse_erlebt_wie_intensiv_war_das_bedeutendste_positive_ereignis" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="328dp"
+        android:text="@string/_0" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="31dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="302dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="331dp"
         android:text="100" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="356dp"
-        android:layout_marginBottom="299dp"
-        android:text="@string/_0" />
 
     <SeekBar
         android:id="@+id/seekBarEvent2"
-        android:layout_width="356dp"
-        android:layout_height="71dp"
+        android:layout_width="343dp"
+        android:layout_height="62dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="258dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="289dp"
         android:max="100"
         android:progress="0"
         android:scaleX="1"
-        android:scaleY="2"
-        android:thumb="@color/white" />
+        android:scaleY="1"
+        android:thumb="@drawable/ic_baseline_panorama_fish_eye_24" />
 
     <TextView
         android:id="@+id/textViewEvent2"
@@ -109,19 +112,63 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="171dp"
-        android:layout_marginBottom="241dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="295dp"
         tools:text="TextView" />
 
-    <Button
-        android:id="@+id/buttonNext"
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="399dp"
+        android:layout_height="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="198dp"
+        android:text="@string/wenn_sie_an_die_personen_denken_die_sie_gerade_umgeben_inwiefern_trifft_folgende_aussage_zu_ich_mag_diese_leute_nicht"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="351dp"
+        android:layout_marginBottom="151dp"
+        android:text="@string/_0" />
+
+    <TextView
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="10dp"
-        android:text="@string/next" />
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="150dp"
+        android:text="@string/_100" />
+
+    <SeekBar
+        android:id="@+id/seekBarSocialContext"
+        android:layout_width="343dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="103dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:thumb="@drawable/ic_baseline_panorama_fish_eye_24" />
+
+    <TextView
+        android:id="@+id/textViewSocialContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="94dp"
+        tools:text="TextView" />
+
 
 
 </RelativeLayout>
